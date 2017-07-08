@@ -1,0 +1,5 @@
+Swift is a type-safe language
+Types can be explicitly annotated, or infered by initial value
+var - variable
+let - constant - good practise to use
+
