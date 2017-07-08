@@ -1,15 +1,26 @@
-Swift is a type-safe language
-Types can be explicitly annotated, or infered by initial value
-var - variable
-let - constant - good practise to use
-Conversion of types is ALWAYS explicit
-Example:
-  var score = 1         //infered as Int
-  val highScore = 100.0 // infered as Double
+- Swift is a type-safe language
+- Statements do not end with ;
+- Variables and constants are never automatically initialized to default values (as they are common in different languages)
+- Types can be explicitly annotated, or infered by initial value
+- "var" - variable keyword
+- "let" - constant keyword - good practise to use
 
-  //later
-  highScore = score     //will not work! You can't assign an Int value to Double
+- Conversion of types is ALWAYS explicit
+- Example:
+    var score = 1         //infered as Int
+    val highScore = 100.0 // infered as Double
+
+    //later
+    highScore = score     //will not work! You can't assign an Int value to Double
 
 In order to fix, you need to explicitly convert the Int to a Double value
-  highScore = Double(score)
+    highScore = Double(score)
+
+- The "Optional" operator ? is used when we don't have inital values for a variable
+
+    var firstName: String
+    var middleName: String?      // ? meaning, middleName is optional value
+    var lastName: String
+    var email: String
+    var secondaryEmail: String?  //? user might not have a secondary email
 
